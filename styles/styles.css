@@ -1,0 +1,261 @@
+/* 
+General Styles
+*/
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    margin:0;
+    padding: 0;
+    color:#F7F7F7;
+    font-family: 'Concert One', cursive;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    border-top: 2px solid #F7F7F7;
+    border-bottom: 2px solid #F7F7F7;
+    height: 120px;
+    margin-bottom: 0;
+}
+
+header{
+    background: #212121;
+}
+
+header .logo{
+    font-size: 3rem;
+    margin-left:45px;
+}
+
+header .nav-bar{
+    width: 60%;
+    margin-right: 100px;
+    margin-left: 30px;
+    justify-content: space-between;
+}
+
+.nav-item{
+    list-style: none;
+}
+
+.nav-item a{
+    text-decoration: none;
+    color: #F7F7F7;
+    font-size: 1.5rem;
+}
+
+.nav-item .active{
+    color:rgba(255, 246, 24, 0.75);
+}
+
+.container{
+    width: 100%;
+    max-width:1440px;
+    min-width: 325px;
+    margin: 0px auto;  
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.center{
+    text-align: center;
+}
+
+.hero-image{
+    position: relative;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-outer{
+    height: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.main{
+    background: #212121;
+    padding-top: 100px;
+}
+
+
+/* 
+Home Page Styles
+*/
+
+.home-hero{
+    height: 900px;
+    background-image: linear-gradient(rgba(33, 33, 33, 0.67), rgba(33, 33, 33, 0.67)),url('../Assets/img/hero-home.jpeg');
+}
+
+.home-hero-outer{
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-top: 120px;
+}
+
+.home-hero-text{
+    width: 634px;
+    font-size:4rem;
+}
+
+.author{
+    font-size: 2.5rem;
+}
+
+
+.content-sections{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.title{
+    font-size: 3.5rem;
+    margin-top: 0;
+    margin-bottom: 70px;
+}
+
+.title::before,
+.title::after{
+    content: "";
+    height: 1px;
+    width:25%;
+    background: #F7F7F7;
+}
+.content{
+    font-size: 2.25rem;
+    margin:0 0 70px 0;
+}
+
+.text-content{
+    width:65%;
+}
+
+.content img{
+    width: 30%;
+    margin-left: 10px;
+    border-radius: 100%;
+}
+
+.content-sections:last-child .content{
+    margin-bottom: 50px;
+}
+
+.carousel{
+    background-image: linear-gradient(rgba(33, 33, 33, 0.5), rgba(33, 33, 33, 0.5)), url('../Assets/img/carousel-bg.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 929px;
+    /* margin-botto */
+}
+
+footer{
+    background: #212121;
+    margin-top: auto;
+    height: 300px;
+    padding-top: 80px;
+}
+
+.icons, .copyright{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.icons{
+    margin-bottom: 80px;
+}
+
+.social-media{
+    width: 35%;
+}
+
+.icons i{
+    font-size: 2rem;
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center; */
+    border-radius: 50%;
+    border: 2px solid #F7F7F7;
+}
+
+.stroke{
+    -webkit-text-stroke: 2px #F7F7F7;
+    -webkit-text-fill-color:#212121;
+}
+
+.copyright{
+    font-size:1.125rem;
+    letter-spacing: 0.2em;
+}
+
+/* About Page Styles */
+
+.about-hero{
+    background-image: linear-gradient(rgba(33, 33, 33, 0.5), rgba(33, 33, 33, 0.5)), url('../Assets/img/hero-about.png');
+    height: 600px;
+}
+
+.about-hero-outer{
+   justify-content: center;
+}
+
+.about-hero-text{
+    width: 802px;
+    font-size: 4rem;
+}
+
+.art-kinds{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.art-title{
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+.art-title::after{
+    content: "";
+    height: 1px;
+    width: 50%;
+    display: block;
+    background: #F7F7F7;
+    margin-top: 20px;
+}
+
+.art-sample img{
+    width:30%;
+    object-fit: cover;
+}
+
+/*
+ Gallery Page styles 
+*/
+
+.gallery-hero{
+    /* background-image: linear-gradient(rgba(33, 33, 33, 0.67), rgba(33, 33, 33, 0.67)), url('../Assets/img/hero-gallery.png'); */
+    background-image: url('../Assets/img/hero-gallery.png');
+    height: 494px;
+}
+
+.gallery-hero-text{
+    font-size:9rem;
+}
+
